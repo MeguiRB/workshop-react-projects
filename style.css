@@ -1,6 +1,57 @@
+html,
+body {
+  height: 100vh;
+}
+
+body {
+  text-align: center;
+  background: linear-gradient(
+      34deg,
+      rgb(42, 46, 48) 27%,
+      rgba(235, 233, 233, 0.815) 27%
+    )
+    no-repeat fixed;
+}
+
+h1 {
+  color: rgb(59, 58, 58);
+  text-shadow: 0 2px 5px rgba(41, 39, 39, 0.651);
+  font-weight: 700;
+  margin: 30px auto;
+  font-size: 50px;
+}
+
+img {
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+}
+
 .card-image {
   overflow: hidden;
   height: 180px;
+}
+
+.btn {
+  background-color: rgba(235, 233, 233, 0.815);
+  box-shadow: 1px 1px 2px grey;
+}
+
+.btn:hover {
+  box-shadow: 1.5px 1.5px 2px grey;
+}
+
+.btn:focus {
+  background-color: rgba(42, 46, 48, 0.781);
+  color: white;
+}
+
+.card {
+  overflow: hidden;
+  max-width: 300px;
+  margin: 20px;
+  padding: 0;
+  box-shadow: 0 2px 5px gray;
 }
 
 .cards {
@@ -8,4 +59,10 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
+}
+
+@media only screen and (max-width: 700px) {
+  .cards {
+    flex-direction: column;
+  }
 }
