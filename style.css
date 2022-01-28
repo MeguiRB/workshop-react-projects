@@ -1,3 +1,11 @@
-h1 {
-  color: brown;
+.card-image {
+  overflow: hidden;
+  height: 180px;
+}
+
+.cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
