@@ -1,9 +1,10 @@
 html,
 body {
-  height: 100vh;
+  min-height: 100vh;
 }
 
 body {
+  color: rgb(42, 46, 48);
   text-align: center;
   background: linear-gradient(
       34deg,
@@ -33,6 +34,8 @@ img {
 }
 
 .btn {
+  outline: none;
+
   background-color: rgba(235, 233, 233, 0.815);
   box-shadow: 1px 1px 2px grey;
 }
@@ -41,9 +44,12 @@ img {
   box-shadow: 1.5px 1.5px 2px grey;
 }
 
-.btn:focus {
-  background-color: rgba(42, 46, 48, 0.781);
-  color: white;
+.bootstrap-select .btn:focus {
+  outline: none !important;
+}
+
+.btn:active {
+  box-shadow: none;
 }
 
 .card {
@@ -59,6 +65,30 @@ img {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+}
+
+.author {
+  background-color: rgb(235, 233, 233);
+  padding: 5px 15px;
+  border-radius: 18px;
+  box-shadow: 2px 2px 2px grey;
+  width: fit-content;
+  margin: 5px auto 20px auto;
+}
+
+.author a {
+  text-decoration: none;
+  color: rgb(59, 59, 59);
+  font-weight: 700;
+}
+
+.author a:hover {
+  cursor: pointer;
+  text-shadow: 0 0.3px 0.5px rgb(42, 46, 48);
+}
+
+.author a:active {
+  text-shadow: none;
 }
 
 @media only screen and (max-width: 700px) {
